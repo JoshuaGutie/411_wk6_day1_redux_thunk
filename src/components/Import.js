@@ -11,13 +11,22 @@ import {
 
 const Import = (props) => {
   // fill out this component
-
   return (
-    <Button variant="contained" color="primary">
-      Import
-    </Button>
-
-    
+    <Container maxWidth="lg" className="car-container">
+      <div className="flex-container">
+        <h1>{props.makes.length}</h1>
+        <Button variant="contained" color="primary">Import</Button>
+      </div>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>Id</TableCell>
+            <TableCell>Make</TableCell>
+            <TableCell>Actions</TableCell>
+          </TableRow>
+        </TableHead>
+      </Table>
+    </Container>
   );
 };
 
